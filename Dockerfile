@@ -1,5 +1,5 @@
 
-FROM ubuntu
+FROM docker.io/ubuntu
 MAINTAINER Nick Vidiadakis
 
 # Install requirements, java and eclipse

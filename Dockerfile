@@ -3,7 +3,7 @@ FROM docker.io/ubuntu
 MAINTAINER Nick Vidiadakis
 
 # Install requirements, java and eclipse
-ENV DEBIAN_FRONTEND=noninteractive
+ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && \
     apt-get upgrade -y && \

@@ -14,6 +14,7 @@ RUN apt-get update && \
     apt-get install -y oracle-java8-installer && \
     apt-get install -y nginx postgresql git nodejs npm supervisor wget && \
     apt-get install -y oracle-java8-installer libxext-dev libxrender-dev libxtst-dev && \
+    chmod 1777 /tmp &&\
     apt-get install -y tomcat7 tomcat7-admin mysql-server && echo "JAVA_HOME=/usr/lib/jvm/java-8-oracle" >> /etc/default/tomcat7 && \
     apt-get update && apt-get install -y libgtk2.0-0 libcanberra-gtk-module && \
     wget http://eclipse.c3sl.ufpr.br/technology/epp/downloads/release/mars/1/eclipse-jee-mars-1-linux-gtk-x86_64.tar.gz -O /tmp/eclipse.tar.gz -q && \
